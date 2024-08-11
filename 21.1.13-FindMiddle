@@ -1,0 +1,12 @@
+public class FindMiddle {
+	public void findMiddle(int[] arr) {
+		int n=arr.length;
+		int m=n/2;
+		if(n%2==0){
+			System.out.println(arr[m-1]);
+			System.out.println(arr[m]);
+		}
+		else
+			System.out.println(arr[m]);
+}
+}
