@@ -1,0 +1,24 @@
+package q11064;
+
+public class SequenceCount {
+	/**
+	 * Find the count of sequences present in the given arry.
+	 * 
+	 * 
+	 * 
+	 * 
+	 * @return count
+	 */ 
+	
+	
+	
+	public int sequenceCount(int[] arr) {
+		int c=0;
+		for(int i=0;i<arr.length-2;i++)
+			{
+				if((arr[i+1]==2*arr[i]) && (arr[i+2]==3*arr[i]))
+					c++;
+			}
+		return c;
+	}
+}
