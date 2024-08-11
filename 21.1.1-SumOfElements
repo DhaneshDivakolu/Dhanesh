@@ -1,0 +1,20 @@
+package q11046;
+public class SumOfElements {
+	
+	/**
+	 * Computes the sum of all the elements in the given array
+	 * 
+	 * 
+	 * @return the sum 
+	 */
+	public long sum(int[] arr) {
+		long s=0;
+		if(arr.length==0)
+			return 0;
+		for(int i=0;i<arr.length;i++)
+			{
+				s+=arr[i];
+			}
+		return s;
+	}
+}
