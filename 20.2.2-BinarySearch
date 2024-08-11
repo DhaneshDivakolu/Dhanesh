@@ -1,0 +1,31 @@
+class BinarySearch
+{
+	public static int binaryS(int[] arr,int key)
+	{
+		int low=0;
+		int high=arr.length-1;
+		while(low<=high)
+			{
+				int mid=(low+high)/2;
+				if(arr[mid]==key)
+				{
+					return mid;
+				}
+				if(arr[mid]<key)
+				{
+					low=mid-1;
+				}
+				else
+					high=mid-1;
+			}
+		return -1;
+	}
+	public static void binarySearch(int[] arr,int key)
+	{
+		int r=binaryS(arr,key);
+		if(r==-1)
+			System.out.println("Search element "+key+" is not found");
+		else
+			System.out.println("Search element "+key+" is found at position : "+r);
+	}
+}
